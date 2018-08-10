@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
-    render() {
+    render() {        
         return (
             <header id="main-header">
-                <div>Majime - まじめ</div>
+                <div>{this.props.title}</div>
             </header>
         );
     }
