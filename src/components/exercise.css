@@ -1,0 +1,39 @@
+.exercise {
+    border: 1px solid gray;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.answer {
+    
+    border: 1px solid gray;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px #333;
+    transition: 0.4s;
+}
+
+.answer:hover{
+    background-color: rgb(110, 146, 170);
+}
+
+.answered {
+    
+    border: 1px solid gray;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.answered.valid{
+    background-color: rgb(28, 201, 12);
+}
+
+
+.answered.invalid{
+    background-color: rgb(201, 12, 12);
+}

@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "title": "Conjuntos I",
+        "exercises": [
+            {
+                "id": 1,
+                "description": "Pepita gastó en la librería $25. Después fue a una tienda y quiso comprar 3 metros de una cinta que valía $9 el metro, pero le faltaban $6",
+                "types": {
+                    "choice": {
+                        "title": "Elige la opción correcta que representen el problema. Puede que haya más de una opción correcta",
+                        "options": [
+                            {
+                                "value": "(25 + 9) * 3 - 6",
+                                "isValid": false
+                            },
+                            {
+                                "value": "25 + 9 * 3 - 6",
+                                "isValid": true
+                            },
+                            {
+                                "value": "25 - (9 * 3 - 6)",
+                                "isValid": false
+                            },
+                            {
+                                "value": "25 + 9 : 3 - 6",
+                                "isValid": false
+                            }                            
+                        ]
+                    },
+                    "complete": {
+                        "title": "Complete con el número que le permite resolver el problema",
+                        "expression": "25 + 9 * 3 - 6"                        
+                    }
+                }
+            },
+            {
+                "id": 2,
+                "description": "Pepita gastó en la librería $25. Después fue a una tienda y quiso comprar 3 metros de una cinta que valía $9 el metro, pero le faltaban $6",
+                "types": {
+                    "choice": {
+                        "title": "Elige la opción correcta que representen el problema. Puede que haya más de una opción correcta",
+                        "options": [
+                            {
+                                "value": "(25 + 9) * 3 - 6",
+                                "isValid": false
+                            },
+                            {
+                                "value": "25 + 9 * 3 - 6",
+                                "isValid": true
+                            },
+                            {
+                                "value": "25 - (9 * 3 - 6)",
+                                "isValid": false
+                            },
+                            {
+                                "value": "25 + 9 : 3 - 6",
+                                "isValid": false
+                            }                            
+                        ]
+                    },
+                    "complete": {
+                        "title": "Complete con el número que le permite resolver el problema",
+                        "expression": "25 + 9 * 3 - 6"                        
+                    }
+                }
+            }
+        ]
+    }
+]
