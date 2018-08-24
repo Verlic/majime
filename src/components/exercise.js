@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './exercise.css';
+import Option from './option.js';
 
 class Exercise extends Component {
     constructor(props) {
         super(props);
         this.state = { answered: false };
+
     }
     checkValue(option) {
         if (!this.state.answered) {
@@ -28,12 +30,13 @@ class Exercise extends Component {
         }
     }
 
+
     render() {
         return (
             <div className="exercise">
                 <div><h2>{this.props.item.description}</h2></div>
                 <div>{this.props.item.types.choice.title}</div>
-                <div>{this.props.item.types.choice.options.map(option => <p className={this.getStyle(option)} key={option.value} onClick={() => this.checkValue(option)}>{option.value}</p>)}</div>
+                <div>{this.props.item.types.choice.options.map(option => <Option isValid={option.isValid} isSelected={this.state.choice===option} isAnswered={this.state.answered} onClick={() => this.checkValue(option)} key={option.value} description={option.value}></Option>)}</div>
             </div>
         );
     }
